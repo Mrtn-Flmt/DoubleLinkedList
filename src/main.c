@@ -25,13 +25,7 @@ int main()
     } else { 
         printf("La cle %d n'existe pas.\n", Key);
     }
-
-    Key = 32;
-    if (chercherNode(Arbre, Key)) { 
-        printf("La cle %d existe.\n", Key);
-    } else { 
-        printf("La cle %d n'existe pas.\n", Key); 
-    }
+    
     printf("-------------------------------\n");
     viderTree(&Arbre);
     return 0;
