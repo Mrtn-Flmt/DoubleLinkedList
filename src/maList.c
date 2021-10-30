@@ -4,6 +4,7 @@
 
 void ajouterNode(node **tree, unsigned int key)
 {
+    // init
     node *tmpNode;
     node *tmpTree = *tree;
     node *elem = malloc(sizeof(node));
@@ -33,7 +34,7 @@ int chercherNode(node *tree, unsigned int key)
 {
     while (tree) // Parcourir le tree
     {
-        if (key == tree->key) // Si la clé correspond: return 1
+        if (key == tree->key) // Si la clée correspond: return 1
             return 1;
         if (key > tree->key) { // Si la clée est suppérieur à la clée de l'arbre: go sur la branche de droite 
             tree = tree->right;

@@ -14,5 +14,6 @@ void afficherTree(node *tree);
 void afficherTreeInverse(node *tree);
 void viderTree(node **tree);
 
+void marquerVoisins(int **adjacence, int ordre, int s);
 
 #endif //H_BTREE

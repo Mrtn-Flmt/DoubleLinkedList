@@ -6,6 +6,7 @@ int main()
 {
     int Key;
     node *Arbre = NULL;
+    int **adjacence;
 
     ajouterNode(&Arbre, 30);
     ajouterNode(&Arbre, 20);
@@ -20,8 +21,8 @@ int main()
     printf("-------------------------------\n");
     
     Key = 30;
-    if(chercherNode(Arbre, Key)) { // Si le node est présent
-        printf("La cle %d existe.\n", Key); // Afficher
+    if (chercherNode(Arbre, Key)) { // Si la clée est présente dans un des nodes
+        printf("La cle %d existe.\n", Key);
     } else { 
         printf("La cle %d n'existe pas.\n", Key);
     }
